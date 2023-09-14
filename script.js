@@ -65,7 +65,7 @@ btn.hold.addEventListener('click', function () {
     Number(activePlayer.currentScore.textContent);
   activePlayer.currentScore.textContent = 0;
 
-  if (Number(activePlayer.score.textContent) >= 10) {
+  if (Number(activePlayer.score.textContent) >= 100) {
     activePlayer.el.classList.add('player--winner');
     activePlayer.name.textContent = 'Player 1 wins!';
     disableButtons();
